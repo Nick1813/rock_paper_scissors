@@ -40,7 +40,7 @@ if(playerSelection === computerSelection){
 }
 
 
-function game(){
+/*function game(){
 for(let i=0;i<5;i++){
     let playerSelection = prompt("Enter rock, paper, or scissors");
     var computerSelection=getComputerChoice();
@@ -51,7 +51,7 @@ for(let i=0;i<5;i++){
 gameOver();
 console.log(gameOver(playerScore,computerScore));
 }
-
+*/
 
 
 function gameOver(playerScore,computerScore){
