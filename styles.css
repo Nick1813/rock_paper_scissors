@@ -1,10 +1,84 @@
-.scores{
-    display: flex;
-    justify-content: space-between;
+*{
+    margin:0;
+    padding:0;
+    background:rgb(200,200,200);
+    box-sizing: border-box;
+    color:rgb(100,100,100);
+}
+.game{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
+    height:100vh;
+    width:100vw;
+}
+.title{
+    position: absolute;
+    top: 0;
+    font-size: 4rem;
+    z-index: 2;
+}
+.score{
+    display:flex;
+    width:30vw;
+    justify-content: space-evenly;
+    top:70px;
+    position: absolute;
+    z-index: 1;
+}
+.p-count,.c-count{
+    text-align: center;
+    font-size: 1.5rem;
+    margin-top: 1rem;
 }
 .options{
     display: flex;
-    align-items: center;
     justify-content: space-evenly;
+    width: 50vw;
+    margin-top: 2rem;
+}
+.rock, .paper, .scissors{
+    padding: .8rem;
+    width:100px;
+    border-radius: 10px;
+    background: rgb(0,90,200);
+    color:black;
+    outline:none;
+    border:none;
+    cursor: pointer;
+}
+.move{
+    font-size: 2rem;
+    font-weight: bold;
+}
+.reload{
+    display: none;
+    margin-top: 2rem;
+    border:none;
+    outline: none;
+    padding:1rem;
+    background-color: seagreen;
+    border-radius: 10px;
+    color:black;
+    z-index: 3;
+}
+.result{
+    margin-top: 20px;
+    font-size: 1.2rem;
+    color:black;
+}
+
+@media screen and (max-width:612px) {
+    .title{
+        text-align:center;
+    }
+    .score{
+        position: absolute;
+        top:200px;
+        width: 100vw;
+    }
+    .options{
+        width:100vw;
+    }
 }
